@@ -1,0 +1,6 @@
+name: 'Delete Branch'
+description: 'Delete the specified Branch'
+runs:
+# refer: https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runsusing-for-javascript-actions
+  using: 'node20'
+  main: 'main.js'
