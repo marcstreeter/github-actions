@@ -11,7 +11,7 @@ inputs:
   auth_token: 
     description: "Token authorized to perform deletions."
     required: false
-    default: ${{ secrets.GITHUB_TOKEN }}
+    default: ${{ github.token }}
 runs:
 # refer: https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runsusing-for-javascript-actions
   using: 'node20'
