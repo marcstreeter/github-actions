@@ -1,5 +1,17 @@
 name: 'Delete Branch'
 description: 'Delete the specified Branch'
+inputs:
+  branch:
+    description: "The branch that will be deleted."
+    required: true
+  repository:
+    description: "The corresponding branch's repository."
+    required: false
+    default: ${{ github.repository }}
+  auth_token: 
+    description: "Token authorized to perform deletions."
+    required: false
+    default: ${{ secrets.GITHUB_TOKEN }}
 runs:
 # refer: https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions#runsusing-for-javascript-actions
   using: 'node20'
